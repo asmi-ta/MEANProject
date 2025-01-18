@@ -1,0 +1,22 @@
+<h1>Login</h1>
+<form #data="ngForm" (ngSubmit)="save(data)">
+  <label for="username">Enter Username</label>
+  <input type="text" id="username" name="yourname" ngModel required>
+  <br><br>
+  
+  <label for="password">Enter Password</label>
+  <input type="password" id="password" name="yourpass" ngModel required>
+  <br><br>
+  
+  <input type="submit" value="Login" > 
+  <!-- [disabled]="!loginForm.valid" -->
+</form>
+
+
+
+<!-- <h1>{{data.value.username}}</h1>
+<h1>{{data.value.password}}</h1> -->
+<!-- 
+<h1>{{a}}</h1>
+<h1>{{b}}</h1> -->
+<h2 class="msg">{{msg.message}}</h2>

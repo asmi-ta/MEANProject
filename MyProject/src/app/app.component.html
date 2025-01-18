@@ -1,0 +1,14 @@
+<div>
+  <a href="HOME/">Home</a>
+  <a href="Login/" (click)="showLogin()">Login</a>
+  <a href="SignUp" (click)="showSignup()">SignUp</a>
+  <a href="Update/">Update</a>
+</div>
+<!-- <h1>Hello, {{title}}</h1>  but don't need it -->
+<!-- 
+<div [ngClass]="isLogin ? 'login-background' : 'signup-background'">
+  <app-login *ngIf="isLogin"></app-login>
+  <app-sign-up *ngIf="!isLogin"></app-sign-up>
+</div> -->
+
+<router-outlet></router-outlet>

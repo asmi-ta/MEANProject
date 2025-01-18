@@ -1,0 +1,17 @@
+<div class="signup-background">
+
+    <h1>SignUp Form</h1>
+    <form #data="ngForm" (ngSubmit)="delete(data)"> <!-- ngSubmit is event like you click on button and do some operations -->
+    
+        <label>Enter Name</label>
+        <input type="text" name="yourname" ngModel><br><br>
+
+    
+        <label>Enter Password</label>
+        <input type="password" name="yourpass" ngModel><br><br>
+    
+        <input type="submit" value="Delete">
+    
+    </form>
+
+    <h1>{{msg?.message}}</h1>
